@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form name="registration" method="post" action="form.aspx">
+        <fieldset>
+            <table border="1" cellpadding="1" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th id="names">Last Name</th>
+                        <td>
+                            <input type="text" name="names" value="" size="30" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>First Name</th>
+                        <td> <input type="text" name="names" value="" size="30" required /> </td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td> <textarea rows="4" cols="30"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <th>City</th>
+                        <td>
+                            <input type="text" name="names" value="" size="15" required />
+                            State <input type="text" value="" size="5" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Zip/Postal Code</th>
+                        <td><input type="text" name="names" value="" size="5" required /></td>
+                    </tr>
+                    <tr>
+                        <th>Country</th>
+                        <td>
+                            <select name="country">
+                                <option value="1">America</option>
+                                <option value="2">Amsterdam</option>
+                                <option value="3">Antalia</option>
+                                <option value="4">Bangladesh</option>
+                                <option value="5">Bulgaria</option>
+                                <option value="6">Siria</option>
+                                <option value="7">Japan</option>
+                                <option value="8">Jamaica</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Phone(country code,<br /> area code, number)</th>
+                        <td>
+                            (<input type="tel" name="names" value="" size="3" required />)
+                            <input type="tel" name="names" value="" size="3" required />
+                            <input type="tel" name="names" value="" size="4" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td><input type="email" name="names" value="" size="25" placeholder="email@domain.TLD" /></td>
+                    </tr>
+                    <tr>
+                        <th>Birth Date</th>
+                        <td><input type="datetime" name="names" value="" placeholder="dd/MM/yyyy" /></td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>
+                            <select name="gender">
+                                <option value="1">male</option>
+                                <option value="2">female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Starting Date</th>
+                        <td>
+                            <input type="radio" name="names" value="date" />Spring 2015
+                            <input type="radio" name="names" value="date" />Summer 2015
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Comments\Questions</th>
+                        <td><textarea rows="5" cols="30"></textarea></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" align="center" bgcolor="skyBlue">
+                            <input type="submit" name="names" value="Submit" />
+                            <input type="reset" name="names" value="Reset" />
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

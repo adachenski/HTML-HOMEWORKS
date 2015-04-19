@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Grid Component</title>
+    <style>
+        thead, tfoot {
+            background-color: #CCCCFF;
+        }
+
+        table {
+            border: 1px solid #ddd;
+            border-collapse: separate;
+            border-left: 0;
+            border-radius: 4px;
+            border-spacing: 0px;
+        }
+
+        html, body {
+            font: 14px/16px "Lucida Grande", "Tahoma", sans-serif;
+        }
+
+        body {
+            padding: 6px;
+        }
+
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            border-collapse: separate;
+        }
+
+        tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        th, td {
+            padding: 5px 4px 6px 4px;
+            text-align: left;
+            vertical-align: top;
+            border-left: 1px solid #ddd;
+        }
+
+        td {
+            border: 1px solid #ddd;
+        }
+
+        tfoot tr td {
+            border-color: none;
+        }
+
+        #footRow #footSpan {
+            padding: 1%;
+            float: right;
+        }
+
+        #pic {
+            width: 20px;
+        }
+
+        #numbers {
+            font-size: 150%;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="4" cellspacing="0">
+        <thead>
+            <tr>
+                <td id="s" colspan="6">Drag a colum header and drop it here to group by that column</td>
+            </tr>
+            <tr>
+                <td>ProductID</td>
+                <td width="240">Product name</td>
+                <td width="180">Unit price</td>
+                <td width="180">Quantity per unit</td>
+                <td width="180">Units in stock</td>
+                <td>Discontinued</td>
+            </tr>
+            <tr>
+                <td><input type="text" size="2" name="ProductID" /></td>
+                <td><input type="text" size="14" /></td>
+                <td>
+                    <input type="text" size="6" />
+                    <img src="GridPic/filter.png" align="top" />
+                </td>
+                <td><input type="text" size="8" /></td>
+                <td>
+                    <input type="text" size="6" />
+                    <img src="GridPic/filter.png" align="top" />
+                </td>
+                <td>
+                    <input type="checkbox" name="Discontinued" />
+                    <img src="GridPic/filter.png" align="top" />
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Chai</td>
+                <td>$18.00</td>
+                <td>10 boxex x 20 bags</td>
+                <td>39</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chang</td>
+                <td>$19.00</td>
+                <td>24 -12 oz bottles</td>
+                <td>17</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Aniseed Syrup</td>
+                <td>$10.00</td>
+                <td>12 - 550 ml bottles</td>
+                <td>13</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Cheaf Anton's Cajun Seasoning</td>
+                <td>$22.00</td>
+                <td>48 - 6 oz jar</td>
+                <td>53</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Cheaf Anton's Gumbo mix</td>
+                <td>$21.35</td>
+                <td>36 boxes</td>
+                <td>0</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Grandma Bousendberry Spread</td>
+                <td>$25.00</td>
+                <td>12 - 8 oz jar</td>
+                <td>120</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Uncle Bob Organic Dried Pairs</td>
+                <td>$30.00</td>
+                <td>12 - 1 lb pkgs.</td>
+                <td>15</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Northwoods Cranberry Sause</td>
+                <td>$40.00</td>
+                <td>12 - 12 oz jar</td>
+                <td>6</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Mishi Cobe Niku</td>
+                <td>$97.00</td>
+                <td>18 - 500 g pakgs.</td>
+                <td>29</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Icura</td>
+                <td>$31.00</td>
+                <td>12 - 200 ml jars</td>
+                <td>31</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr id="footRow">
+                <td colspan="6">
+                    <span>
+                        <a href="#">
+                            <img src="GridPic/hide-left-icon.png" id="pic" align="top" />
+                        </a>
+                        <a href="#">
+                            <img src="GridPic/left.png" id="pic" align="top" />
+                        </a>
+                    </span>
+                    <span id="numbers">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>....
+                    </span>
+                    <span>
+                        <a href="#">
+                            <img src="GridPic/right.png" id="pic" align="top" />
+                        </a>
+                        <a href="#">
+                            <img src="GridPic/hide-right-icon.png" id="pic" align="top" />
+                        </a>
+                    </span>
+                    <span>
+                        Page size:  <select name="page-numbers">
+                            <option value="1">10</option>
+                            <option value="2">11</option>
+                            <option value="3">12</option>
+                            <option value="4">13</option>
+                            <option value="5">14</option>
+                        </select>
+                    </span>
+                    <span id="footSpan"> 335104 items in 33511 pages</span>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
