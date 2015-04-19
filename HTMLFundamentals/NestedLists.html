@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #circle {
+            list-style-type: circle;
+        }
+
+        #disc {
+            list-style-type: disc;
+        }
+    </style>
+</head>
+<body>
+    <ol type="I">
+        <li>
+            <div>List item 1</div>
+            <ol type="a">
+                <li>Nested Item 1.1</li>
+                <li>Nested Item 1.2</li>
+            </ol>
+        </li>
+        <li>
+            <div>List item 2</div>
+            <ol typeof="1">
+                <li>Nested Item 2.1</li>
+                <li>
+                    <div>Nested Item 2.2</div>
+                    <ul id="circle">
+                        <li>Nested Item 2.2.1</li>
+                        <li>
+                            <div>Nested Item 2.2.2</div>
+                            <ul typeof="square ">
+                                <li>  Nested Item 2.2.2.1  </li>
+                                <li>  Nested Item 2.2.2.2  </li>
+                            </ul>
+                        </li>
+                        <li>Nested Item 2.2.3</li>
+                    </ul>
+                </li>
+                <li>Nested Item 2.3</li>
+            </ol>
+        </li>
+        <li>
+            <div>List item 3</div>
+            <ul id="disc">
+                <li>Nested Item 3.1</li>
+                <li>Nested Item 3.2</li>
+                <li>Nested Item 3.3</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
