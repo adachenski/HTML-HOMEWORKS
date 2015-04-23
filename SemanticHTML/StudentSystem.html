@@ -4,24 +4,40 @@
     <title>System website</title>
     <style>
         #HeaderUserPanel {
-  margin-top: 2px;
-  margin-right: 5px;
-  text-align: right;
-}
+            margin-top: 2px;
+            margin-right: 5px;
+            text-align: right;
+        }
+
         header {
             font-size: 30px;
-            Background: lightGreen;
             font-weight: bold;
-            position: relative;
+            text-align: center;
+            background-image: url("pic/background-header.jpg");
+        }
+
+        .tableContainer {
+            margin-left: auto;
+            margin-right: auto;
+             background-color: #FFFF99;
+        }
+
+        section {
+            background-image: url("pic/golfCourse.jpg");
+        }
+
+        .navList {
+            text-align: center;
+            list-style-position: inside;
         }
     </style>
 </head>
 <body>
-    <header>Welcome to our website</header>
-    <h1><img id="HeaderUserPanel"src="pic/welcome1.jpg" width="150" /></h1>
-    <div>
+    <header>
+        Welcome to our website
+        <h1><img id="HeaderUserPanel" src="pic/WelcomeSign-10.png" width="200" /></h1>
         <nav>
-            <ul>
+            <ul class="navList">
                 <li>
                     <a href="#">
                         nav item 1
@@ -44,9 +60,9 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
     <section>
-        <table border="1" cellpadding="0" cellspacing="0">
+        <table class="tableContainer" border="1" cellpadding="4" cellspacing="0">
             <tr>
                 <th>First name</th>
                 <th>Last Name</th>
